@@ -14,10 +14,32 @@ export class NavBar extends React.Component {
 
   renderNonLoggedNav() {
     return (
-      <div className="ui horizontal pointing menu">
-        <Link className="item" to="/">FrontPage</Link>
-        <Link className="item" to="/login">Login</Link>
-        <Link className="item" to="/registration">Register</Link>
+      <div className="navbar navbar-inverse navbar-fixed-top pohina-pad">
+        <div className="container">
+          <div className="navbar-header">
+            <Link to="/" className="navbar-brand">PöhinäApp</Link>
+            <button className="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+            </button>
+          </div>
+          <div className="navbar-collapse collapse" id="navbar-main">
+            <ul className="nav navbar-nav">
+              <li>
+                <Link to="/page">Page</Link>
+              </li>
+              <li>
+                <Link to="/page2">Another page</Link>
+              </li>
+            </ul>
+
+            <ul className="nav navbar-nav navbar-right">
+              <li><a href="https://google.com/" target="_blank">Jos taidot ei riitä</a></li>
+            </ul>
+
+          </div>
+        </div>
       </div>
     );
   }
