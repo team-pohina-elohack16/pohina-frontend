@@ -27,7 +27,7 @@ export class NavBar extends React.Component {
           <div className="navbar-collapse collapse" id="navbar-main">
             <ul className="nav navbar-nav">
               <li>
-                <Link to="/page">Page</Link>
+                <Link to="/chart">Chart</Link>
               </li>
               <li>
                 <Link to="/page2">Another page</Link>
