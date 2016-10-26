@@ -1,0 +1,12 @@
+language: node_js
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+deploy:
+  provider: heroku
+  api_key:
+    secure: 2aVaK5uofV7gJBGMKYaZueL0YbehCVTknEXVruQVHQeJoL52mhM4eqXth/3vbIJprpXzeLViDOJgE4BSGdwfm51Z6rYoYg5I4CzZOkblA99aOJ80zgj4dg9WM6lJvCpVIep7sE8NCINHX7YExhmVKxQ5JceZKW6i9zp4WXS5Pdrn0EIej5j7xoixFR0Emo+D7XAgwX5eoE34JNH2PHuK9nEon0Mq3k+uHGWcSy0fKocWTYjzkL19X1y+JpeFp9IZwwLtH/ryRKrWwfR+dGCeB4FzcSI5uAm4yg3NF5DPkNva/p5sSU3CE7RSOHQWV5+n/KI3e+8A5MFlln7JlcJ0BcMjpTc7ACU6lG7Dm+VyEFfCP+X2G9z89xMVcdjZcvJesX81qc5B4onT32KE17LQVbz0CZ/rJPbYd+9YjXNGYAB7Go6b4l28G2EEVHMIOBfWr9ER8UPBIKYsm+2QUND7/w/othtsHmvzy02cxAckXH5kxF5uT5A80DGWXD9IcGwJk9Ga9druvW27TtEzXZis5ShdPsumuOoGl+RTpHycMm47Ds/yMU2F06max5S/7tBEoz6TISz8tqWVK7KPhLlT7kWslzLVhgrzkY0TuamsFkKwH0aUoYkQTI5cpSNjGrOSnvOjzjREZk8h1Pmv2koKjNKAoBBdI8yvySaSjR1Dy00=
+  app: pohina-app
+  on:
+    repo: team-pohina-elohack16/pohina-frontend
