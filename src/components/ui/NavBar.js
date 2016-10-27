@@ -40,7 +40,7 @@ export class NavBar extends React.Component {
             </ul>
 
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="https://google.com/" target="_blank">Jos taidot ei riitä</a></li>
+              <li><a href="https://google.com/" target="_blank">Login</a></li>
             </ul>
 
           </div>

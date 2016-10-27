@@ -130,8 +130,8 @@ export default class DataBank extends React.Component {
         <div className="page-header" id="banner">
           <div className="row">
             <div className="">
-              <h1>Hei olen tietoa</h1>
-              <p className="lead">Kuinka tulla rikkaaksi</p>
+              <h1>Kuinka tulla yrittäjäksi</h1>
+              <p className="lead">Helpot ohjeet aloittelevalle yrittäjälle</p>
             </div>
             <div className="col-lg-4 col-md-5 col-sm-6">
               <div className="sponsor">
@@ -141,12 +141,92 @@ export default class DataBank extends React.Component {
 
           <div className="row">
             <div className="">
-              <h2>Example body text</h2>
-              <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-              <p><small>This line of text is meant to be treated as fine print.</small></p>
-              <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
-              <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
-              <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+              <h2>Yrityksen perustaminen</h2>
+              <p>
+                Eikö olisikin mahtavaa olla yrittäjä? Oman onnensa seppä. Työpaikkojen luoja.
+                Suomen talouden tuki. Yrittäjäksi ryhtyminen vaatii paljon motivaatiota ja
+                omistautumista halukkaalta/xxx mutta kaikkien vaikeuksien jälkeenkin se on
+                palkitseva tapa elättää itsensä. Tämän oppaan tarkoituksena on olla helppona
+                tutustumisena yrittäjyyteen ja sen tuomiin haasteisiin.
+              </p>
+
+              <h3>Liikeidean validointi</h3>
+              <p>
+                Tämä on ehkä se tärkein kysymys yrittäjyksi haluaville; onko tälle palvelulle
+                tai tuotteelle kysyntää? Vaikka se saattaa tuntua itsestään selvältä ei kannata
+                unohtaa oman tuotteen jatkuvaa arviointia ja asiakkaiden xxx.
+              </p>
+
+              <h3>Yritysmuodon valinta</h3>
+              <p>
+                Jos ideasi vaikuttaa hyvältä ja tunnet asiakkaita, jotka ovat jo kertoneet
+                halustaan ostaa sinulta tuotteitasi niin eihän siinä muu auta kuin ryhtyä
+                yrittämään! Ensimmäisenä tulee miettiä minkä yritysmuodon yrityksellesi valitset:
+              </p>
+
+              <h4>Toiminimi</h4>
+              <p>
+                Ajattelitko hoitaa tekemiesi taulujen ja putkitöiden myymisen ilman suurempaa
+                häslinkiä? Tuleeko liikevaihtosi olemaan alle 10 000€ vuodessa? Etkö tarvitse
+                sen suurempia investointeja päästäksesi alkuun? Toiminimi on helppo tapa aloittaa
+                yrittäminen ja se tarjoaa tavan myydä ja veloittaa helposti ja vaivattomasti.
+              </p>
+
+              <h4>Kommandiittiyhtiö</h4>
+              <p>
+                Maksaako kalja liikaa etkä halua osakkeita? Öh ah.
+              </p>
+
+              <h4>Osakeyhtiö</h4>
+              <p>
+                Onko sinulle suunnitelmissa kasvattaa yritystäsi nopeasti ja tarvitko investointeja
+                päästäksesi alkuun? ÖÖ ää. Tarvitset 2000€ ja talosi pantiksi.
+              </p>
+
+              <h4>Joku???</h4>
+              <p></p>
+
+              <h3>Perustamisilmoituksen lähettäminen</h3>
+              <p>
+                Meepä tänne ja ilmoita että haluat yrittäjäksi.
+                kaupparekisteriin, arvonlisäverovelvolliseksi, ennakkoperintärekisteriin ja työnantajarekisteriin
+              </p>
+
+              <h3>Starttirahan hakeminen</h3>
+              <p>
+                Uusille yrittäjille usein tarjotaan starttirahaa, jota kandeis hakee.
+              </p>
+
+              <h3>Ota itsellesi vakuutus</h3>
+              <p>
+                Ilman vakuutusta keikut hivenen kuin kallion reunalla ilman riippuliidintä.
+                Älä ole tyhmä, osta vakuutusta Elolta jo nyt!
+              </p>
+
+              <h3>Valitse itsellesi kirjanpitäjä</h3>
+              <p>
+                Kirjanpito on tarkkaa ja työlästä hommaa, jossa ei sovi tehdä virheitä.
+                Siksi usein aloittavat yrittäjät hakeutuvat käyttämään ulkoisia palveluita
+                jotka hoitavat sen heidän puolestaan. Lue *Kirjanpito* opas jossa kerromme
+                lisää mitä kirjanpito pitää sisällään ja mitä yrittäjän tulisi siitä vähintäänkin
+                tietää. Tavallisesti vuosittainen kirjanpito maksaa pienyrittäjälle xxx vuodessa.
+                Tämän *linkin* kautta voit etsiä itsellesi sopivaa kirjanpitäjää.
+              </p>
+
+              <h3>Kun tulee ongelmia</h3>
+              <p>
+                Tule takaisin tänne ja löydä itsellesi tarkoitus.
+              </p>
+
+              <h3>Jotain jotain</h3>
+              <p>
+                Näillä ohjeilla sinun tulisi jo päästä hyvälle alulle yrittämiseen.
+                Toivotamme sinulle paljon onnea ja intoa yrittämiseen. Elo tukee täysillä
+                suomalaista yrittämistä ja haluamme sinunkin siinä onnistuvan parhaalla mahdollisella
+                tavalla!
+              </p>
+
+              <h3></h3>
             </div>
           </div>
         </div>
