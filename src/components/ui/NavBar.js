@@ -30,6 +30,9 @@ export class NavBar extends React.Component {
                 <Link to="/chart">Chart</Link>
               </li>
               <li>
+                <Link to="/forum">Forum</Link>
+              </li>
+              <li>
                 <Link to="/page2">Another page</Link>
               </li>
             </ul>
