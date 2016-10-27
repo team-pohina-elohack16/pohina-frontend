@@ -52,9 +52,28 @@
   border-radius: 5px;
 }
 
+.pohina-forum-title {
+  margin: 0px;
+}
+
+.pohina-forum-title-right {
+  margin: 0px;
+  text-align:right;
+}
+
 .pohina-forum-panel-outmost {
   border-radius: 5px;
   margin: 5px;
+}
+
+.pohina-alignleft {
+  margin: 0px;
+	float: left;
+}
+
+.pohina-alignright {
+  margin: 0px;
+	float: right;
 }
 
 .navbar-inverse {
