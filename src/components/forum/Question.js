@@ -6,7 +6,7 @@ export default class Forum extends React.Component {
     const question = this.props.question.question;
     const answers = this.props.question.answers;
     return (
-      <div className="panel panel-default forum-question">
+      <div className="panel panel-default pohina-forum-panel-outmost">
         <h3 className="center" >{question}</h3>
         <ul>
           {
