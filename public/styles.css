@@ -250,3 +250,16 @@ body {
 
   border-top: 20px solid #f00;
 }
+
+.welcome img {
+  width: 100%;
+}
+
+.welcome h1 {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  margin: -42% auto auto 8%;
+  color: white;
+  font-size: 50px;
+}
