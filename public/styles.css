@@ -28,12 +28,6 @@
   font-size: 20px;
 }
 
-.forum-question {
-  padding: 25px;
-  margin: 25px;
-  border-style: dashed;
-}
-
 .pohina-sidebar-wrapper {
   position: fixed;
 }
@@ -49,6 +43,15 @@
   position: absolute;
   bottom: 90px;
   margin-left: 30px;
+}
+
+.pohina-btn {
+  border-radius: 5px;
+}
+
+.pohina-forum-panel-outmost {
+  border-radius: 5px;
+  margin: 5px;
 }
 
 .navbar-inverse {
@@ -227,4 +230,39 @@
 body {
   margin: 0px;
   padding: 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-bottom: 20px solid #f00;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #f00;
+}
+
+.welcome img {
+  width: 100%;
+}
+
+.welcome h1 {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  margin: -42% auto auto 8%;
+  color: white;
+  font-size: 50px;
 }
