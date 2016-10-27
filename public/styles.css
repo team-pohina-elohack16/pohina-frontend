@@ -75,6 +75,11 @@
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 0;
+  border-radius: 3px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  background-color: rgb(254, 209, 49); /* brand color */
 }
 
 @media (min-width: 767px) {
