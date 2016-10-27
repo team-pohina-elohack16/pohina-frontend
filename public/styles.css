@@ -18,6 +18,12 @@
   width: 50px;
 }
 
+.forum-question {
+  padding: 25px;
+  margin: 25px;
+  border-style: dashed;
+}
+
 .pohina-sidebar-wrapper {
   position: fixed;
 }
