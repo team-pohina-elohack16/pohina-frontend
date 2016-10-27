@@ -5,7 +5,9 @@ export class ChartThing extends React.Component {
 
   componentDidMount() {
     const { data } = this.props
-    const datasets = data.map(e => createDataset(e.title, e.values))
+    const colors = createColors(data.length);
+    var colorIndex = 0;
+    const datasets = data.map(e => createDataset(e.title, e.values, colors[colorIndex++]))
     datasets.push(createAverageDataset(datasets));
 
     const ctx = document.getElementById("myChart");
@@ -48,8 +50,7 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps, null)(ChartThing)
 
 // dataPoints: array of numbers
-function createDataset(title, dataPoints) {
-  const color = getRandomColor();
+function createDataset(title, dataPoints, color) {
   return {
     label: title,
     data: dataPoints,
@@ -82,14 +83,13 @@ function createAverageDataset(datasets) {
     }
     averageDataPoints.push(sum / datasets.length);
   }
-  return createDataset("average", averageDataPoints);
+  return createDataset("average", averageDataPoints, '#ddd');
 }
 
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++ ) {
-    color += letters[Math.floor(Math.random() * 16)];
+function createColors(count) {
+  var colors = [];
+  for (var i = 0; i < count; i++) {
+    colors.push('hsla(' + (360 / count * i) + ', 90%, 70%, 1)');
   }
-  return color;
+  return colors;
 }
