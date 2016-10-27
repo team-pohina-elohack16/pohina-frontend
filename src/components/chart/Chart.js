@@ -32,7 +32,7 @@ export class ChartThing extends React.Component {
 
   render() {
     return (
-      <div className="pohina-container-m-top">
+      <div className="container pohina-container-m-top">
         <canvas id="myChart" width="400" height="400"></canvas>
       </div>
     );
