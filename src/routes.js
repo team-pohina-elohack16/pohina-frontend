@@ -8,12 +8,14 @@ import FrontPage from "./components/app/FrontPage";
 import NotFound from "./components/app/NotFound";
 
 import Chart from "./components/chart/Chart";
+import Databank from "components/databank/Databank";
 
 export default (
   <Route>
     <Route path="" component={App}>
       <Route path="/" component={FrontPage} />
       <Route path="/chart" component={Chart} />
+      <Route path="/databank" component={Databank} />
       <Route path="*" component={NotFound}/>
     </Route>
   </Route>

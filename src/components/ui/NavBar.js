@@ -14,10 +14,12 @@ export class NavBar extends React.Component {
 
   renderNonLoggedNav() {
     return (
-      <div className="navbar navbar-inverse navbar-fixed-top pohina-pad">
+      <div className="navbar navbar-inverse navbar-fixed-top pohina-pad" id="navbar">
         <div className="container">
           <div className="navbar-header">
-            <Link to="/" className="navbar-brand">PöhinäApp</Link>
+            <Link to="/" className="navbar-brand">
+              <img className="pohina-navbar-logo" src="img/elo_logo.png" />
+            </Link>
             <button className="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
@@ -30,7 +32,7 @@ export class NavBar extends React.Component {
                 <Link to="/chart">Chart</Link>
               </li>
               <li>
-                <Link to="/page2">Another page</Link>
+                <Link to="/databank">Databank</Link>
               </li>
             </ul>
 
