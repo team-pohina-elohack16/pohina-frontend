@@ -1,21 +1,12 @@
 import React from "react";
 import { browserHistory, Link } from "react-router";
 
-export class NavBar extends React.Component {
-  constructor() {
-    super();
-    this.handleLogout = this.handleLogout.bind(this);
-  }
+export default class NavBar extends React.Component {
 
-  handleLogout() {
-    this.props.logout();
-    browserHistory.push("/login");
-  }
-
-  renderNonLoggedNav() {
+  renderNav() {
     return (
       <div className="navbar navbar-inverse navbar-fixed-top pohina-pad" id="navbar">
-        <div className="container">
+        <div className="pohina-navbar">
           <div className="navbar-header">
             <Link to="/">
               <img className="pohina-navbar-logo" src="img/elo_logo.png" />
@@ -29,18 +20,18 @@ export class NavBar extends React.Component {
           <div className="navbar-collapse collapse" id="navbar-main">
             <ul className="nav navbar-nav">
               <li>
-                <Link to="/chart">Chart</Link>
+                <Link to="/chart">Kaavio</Link>
               </li>
               <li>
-                <Link to="/forum">Q&A</Link>
+                <Link to="/forum">Keskustelu</Link>
               </li>
               <li>
-                <Link to="/databank">Databank</Link>
+                <Link to="/databank">Tietopankki</Link>
               </li>
             </ul>
 
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="https://google.com/" target="_blank">Login</a></li>
+              <li><a href="https://google.com/" target="_blank">Kirjaudu sisään</a></li>
             </ul>
 
           </div>
@@ -49,63 +40,11 @@ export class NavBar extends React.Component {
     );
   }
 
-  renderUserNav() {
-    const { user } = this.props;
-    return (
-      <div className="ui horizontal pointing menu">
-        <Link className="item" to="/">FrontPage</Link>
-        <Link className="item" to="/user/me">{ user.firstname }</Link>
-        <a className="item" onClick={ this.handleLogout }>Logout</a>
-      </div>
-    );
-  }
-
-  renderAdminNav() {
-    const { user } = this.props;
-    return (
-      <div className="ui horizontal pointing menu">
-        <Link className="item" to="/">FrontPage</Link>
-        <Link className="item" to="/user/me">{ user.firstname }</Link>
-        <Link className="item" to="/user">All users</Link>
-        <a className="item" onClick={ this.handleLogout }>Logout</a>
-      </div>
-    );
-  }
-
-  renderNav() {
-    const isAdmin = this.props.user.role === "admin";
-    return (
-      <div>
-        { isAdmin ? this.renderAdminNav() : this.renderUserNav() }
-      </div>
-    );
-  }
-
   render() {
-    console.log(this.props.user)
-    const loggedIn = this.props.user.role !== undefined;
     return (
       <div id="nav">
-        { loggedIn ? this.renderNav() : this.renderNonLoggedNav() }
+        { this.renderNav() }
       </div>
     );
   }
 }
-
-import { connect } from "react-redux";
-
-import { logout } from "state/auth/auth.actions";
-
-const mapStateToProps = (state) => {
-  return {
-    user: state.auth.user,
-  };
-};
-
-const mapDispatchToProps = (dispatch) => ({
-  logout() {
-    dispatch(logout());
-  },
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

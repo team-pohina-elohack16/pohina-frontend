@@ -19,10 +19,10 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
-        <main className="main-container">
-          {this.props.children}
-        </main>
+          <NavBar />
+          <main className="main-container">
+            {this.props.children}
+          </main>
       </div>
     );
   }
