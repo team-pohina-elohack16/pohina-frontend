@@ -141,23 +141,58 @@ export default class Forum extends React.Component {
             </div>
 
             <div className="panel panel-default pohina-forum-panel-outmost">
-              <div className="panel-body">Suosituksia tilitoimistoista?</div>
+              <div className="panel-body">
+              <div id="textbox">
+                <p className="pohina-alignleft">Suosituksia tilitoimistoista?</p>
+                <div className="pohina-alignright">
+                  <i className="ion-chevron-down"></i>
+                </div>
+              </div>
+              </div>
             </div>
 
             <div className="panel panel-default pohina-forum-panel-outmost">
-              <div className="panel-body">Mistä edulliset nettisivut yrityselle?</div>
+              <div className="panel-body">
+              <div id="textbox">
+                <p className="pohina-alignleft">Mistä edulliset nettisivut yrityselle?</p>
+                <div className="pohina-alignright">
+                  <i className="ion-chevron-down"></i>
+                </div>
+              </div>
+              </div>
             </div>
 
             <div className="panel panel-default pohina-forum-panel-outmost">
-              <div className="panel-body">Tarvitsee alv maksaa kuukausittain?</div>
+              <div className="panel-body">
+              <div id="textbox">
+                <p className="pohina-alignleft">Tarvitsee alv maksaa kuukausittain?</p>
+                  <div className="pohina-alignright">
+                    <i className="ion-chevron-down"></i>
+                  </div>
+              </div>
+              </div>
             </div>
 
             <div className="panel panel-default pohina-forum-panel-outmost">
-              <div className="panel-body">Milloin starttirahaa haetaan?</div>
+              <div className="panel-body">
+              <div id="textbox">
+                <p className="pohina-alignleft">Milloin starttirahaa haetaan?</p>
+                <div className="pohina-alignright">
+                  <i className="ion-chevron-down"></i>
+                </div>
+              </div>
+              </div>
             </div>
 
             <div className="panel panel-default pohina-forum-panel-outmost">
-              <div className="panel-body">Ensimmäisen työntekijän palkkaaminen</div>
+              <div className="panel-body">
+              <div id="textbox">
+                <p className="pohina-alignleft">Ensimmäisen työntekijän palkkaaminen?</p>
+                <div className="pohina-alignright">
+                  <i className="ion-chevron-down"></i>
+                </div>
+              </div>
+              </div>
             </div>
 
 
