@@ -8,8 +8,14 @@ export default class Forum extends React.Component {
     const question1 = {
       question: "How to hire someone?",
       answers: [
-        "Pay some money",
-        "And be a nice boss/co-worker"
+        {
+          answer: "Pay some money",
+          vote: 19
+        },
+        {
+          answer: "And be a nice boss/co-worker",
+          vote: 18
+        }
       ]
     };
 

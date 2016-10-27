@@ -1,16 +1,17 @@
 import React from "react";
+import Answer from "./Answer";
 
 export default class Forum extends React.Component {
   render() {
     const question = this.props.question.question;
     const answers = this.props.question.answers;
     return (
-      <div className="forum-question">
-        <h3>{question}</h3>
+      <div className="panel panel-default forum-question">
+        <h3 className="center" >{question}</h3>
         <ul>
           {
             answers.map((item) => (
-              <li key={item}>{item}</li>
+              <Answer key={item.answer} answer={item.answer} vote={item.vote} />
             ))
           }
         </ul>

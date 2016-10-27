@@ -21,7 +21,7 @@
 .forum-question {
   padding: 25px;
   margin: 25px;
-  border-style: dashed;
+  border-style: solid;
 }
 
 .pohina-sidebar-wrapper {
@@ -218,4 +218,26 @@
 body {
   margin: 0px;
   padding: 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-bottom: 20px solid #f00;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #f00;
 }
