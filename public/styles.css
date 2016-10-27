@@ -101,6 +101,7 @@
 
 .navbar-inverse .navbar-nav>li>a:hover {
   background-color: rgb(254, 209, 49); /* brand color */
+  color: #000;
 }
 
 @media (min-width: 767px) {
