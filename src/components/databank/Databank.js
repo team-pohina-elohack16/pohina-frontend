@@ -36,17 +36,15 @@ export default class DataBank extends React.Component {
         <div className="menu-list">
           <ul id="menu-content" className="menu-content collapse out">
             <li>
-              <a href="#">
-              <i className="fa fa-dashboard fa-lg"></i>
+              <a href="#" className="pohina-link">
               Kuinka tulla yrittäjäksi
               </a>
             </li>
 
             <li data-toggle="collapse" data-target="#service" className="collapsed">
-              <a href="#">
-              <i className="fa fa-globe fa-lg"></i>
+              <a href="#" className="pohina-link">
               Yrityksen perustaminen
-              <span className="arrow"></span>
+              <span className="pohina-icon ion-ios-arrow-down"></span>
               </a>
               </li>
             <ul className="sub-menu collapse" id="service">
@@ -56,10 +54,9 @@ export default class DataBank extends React.Component {
             </ul>
 
             <li data-toggle="collapse" data-target="#service" className="collapsed">
-              <a href="#">
-              <i className="fa fa-globe fa-lg"></i>
+              <a href="#" className="pohina-link">
               Kirjanpidon tekeminen
-              <span className="arrow"></span>
+              <span className="pohina-icon ion-ios-arrow-down"></span>
               </a>
               </li>
             <ul className="sub-menu collapse" id="service">
@@ -69,10 +66,9 @@ export default class DataBank extends React.Component {
             </ul>
 
             <li data-toggle="collapse" data-target="#service" className="collapsed">
-              <a href="#">
-              <i className="fa fa-globe fa-lg"></i>
+              <a href="#" className="pohina-link">
               Verojen maksaminen
-              <span className="arrow"></span>
+              <span className="pohina-icon ion-ios-arrow-down"></span>
               </a>
               </li>
             <ul className="sub-menu collapse" id="service">
@@ -82,10 +78,9 @@ export default class DataBank extends React.Component {
             </ul>
 
             <li data-toggle="collapse" data-target="#service" className="collapsed">
-              <a href="#">
-              <i className="fa fa-globe fa-lg"></i>
+              <a href="#" className="pohina-link">
               Henkilöstön palkkaaminen
-              <span className="arrow"></span>
+              <span className="pohina-icon ion-ios-arrow-down"></span>
               </a>
               </li>
             <ul className="sub-menu collapse" id="service">
@@ -95,10 +90,9 @@ export default class DataBank extends React.Component {
             </ul>
 
             <li data-toggle="collapse" data-target="#service" className="collapsed">
-              <a href="#">
-              <i className="fa fa-globe fa-lg"></i>
+              <a href="#" className="pohina-link">
               Yrityksen kasvattaminen
-              <span className="arrow"></span>
+              <span className="pohina-icon ion-ios-arrow-down"></span>
               </a>
               </li>
             <ul className="sub-menu collapse" id="service">
