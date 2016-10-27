@@ -17,7 +17,7 @@ export class NavBar extends React.Component {
       <div className="navbar navbar-inverse navbar-fixed-top pohina-pad" id="navbar">
         <div className="container">
           <div className="navbar-header">
-            <Link to="/" className="navbar-brand">
+            <Link to="/">
               <img className="pohina-navbar-logo" src="img/elo_logo.png" />
             </Link>
             <button className="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
