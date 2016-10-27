@@ -1,37 +1,22 @@
 import React from "react";
 import Chart from "chart.js";
 
-export default class ChartThing extends React.Component {
+export class ChartThing extends React.Component {
 
   componentDidMount() {
+    const { data } = this.props
+    const datasets = data.map(e => createDataset(e.title, e.values))
+    datasets.push(createAverageDataset(datasets));
+
     const ctx = document.getElementById("myChart");
     const myChart = new Chart(ctx, {
-      type: "bar",
+      type: "line",
       data: {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-        datasets: [{
-          label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
-          backgroundColor: [
-            "rgba(255, 99, 132, 0.2)",
-            "rgba(54, 162, 235, 0.2)",
-            "rgba(255, 206, 86, 0.2)",
-            "rgba(75, 192, 192, 0.2)",
-            "rgba(153, 102, 255, 0.2)",
-            "rgba(255, 159, 64, 0.2)"
-          ],
-          borderColor: [
-            "rgba(255,99,132,1)",
-            "rgba(54, 162, 235, 1)",
-            "rgba(255, 206, 86, 1)",
-            "rgba(75, 192, 192, 1)",
-            "rgba(153, 102, 255, 1)",
-            "rgba(255, 159, 64, 1)"
-          ],
-          borderWidth: 1
-        }]
+        datasets: datasets
       },
       options: {
+        maintainAspectRatio: false,
         scales: {
           yAxes: [{
             ticks: {
@@ -50,4 +35,61 @@ export default class ChartThing extends React.Component {
       </div>
     );
   }
+}
+
+import { connect } from "react-redux";
+
+const mapStateToProps = (state) => {
+  return {
+    data: state.business.data
+  }
+};
+
+export default connect(mapStateToProps, null)(ChartThing)
+
+// dataPoints: array of numbers
+function createDataset(title, dataPoints) {
+  const color = getRandomColor();
+  return {
+    label: title,
+    data: dataPoints,
+    fill: false,
+    lineTension: 0.2,
+    backgroundColor: color,
+    borderColor: color,
+    borderCapStyle: 'butt',
+    borderDash: [],
+    borderDashOffset: 0.0,
+    borderJoinStyle: 'miter',
+    pointBorderColor: '#fff',
+    pointBorderWidth: 1,
+    pointHoverRadius: 6,
+    pointHoverBackgroundColor: color,
+    pointHoverBorderColor: '#fff',
+    pointHoverBorderWidth: 1,
+    pointRadius: 3,
+    pointHitRadius: 10,
+    spanGaps: false
+  };
+}
+
+function createAverageDataset(datasets) {
+  var averageDataPoints = [];
+  for (var i = 0; i < datasets[0].data.length; i++) {
+    var sum = 0.0;
+    for (var datasetIndex = 0; datasetIndex < datasets.length; datasetIndex++) {
+      sum += datasets[datasetIndex].data[i];
+    }
+    averageDataPoints.push(sum / datasets.length);
+  }
+  return createDataset("average", averageDataPoints);
+}
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++ ) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
