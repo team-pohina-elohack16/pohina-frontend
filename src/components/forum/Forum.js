@@ -131,8 +131,8 @@ export default class Forum extends React.Component {
           <div className="page-header" id="banner">
             <div className="row">
               <div className="">
-                <h1>Foorumi</h1>
-                <p className="lead">Keskustelua yrittäjyydestä</p>
+                <h1>Q&A</h1>
+                <p className="lead">Kysymyksiä ja vastauksia yrittäjyydestä</p>
               </div>
               <div className="col-lg-4 col-md-5 col-sm-6">
                 <div className="sponsor">
