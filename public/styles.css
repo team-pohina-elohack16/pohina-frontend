@@ -126,7 +126,12 @@
   font-family: verdana;
   font-size: 12px;
   font-weight: 200;
-  background-color: #55acd8;
+  background-image: url('https://images.unsplash.com/photo-1415045550139-59b6fafc832f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=24b01c30ad6fcf4b33aae390d57ffe2b');
+  width:100%;
+  height: 100%;
+  /*background-size: cover;*/
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
   position: fixed;
   top: 66px;
   width: 300px;
@@ -150,6 +155,9 @@
   margin: 0px;
   line-height: 35px;
   cursor: pointer;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.6);
   /*
     .collapsed{
        .arrow:before{
@@ -189,15 +197,16 @@
 }
 .nav-side-menu ul .sub-menu li,
 .nav-side-menu li .sub-menu li {
-  background-color: #1373a7;
+  color: #000;
   border: none;
   line-height: 28px;
   border-bottom: 1px solid rgba(0,0,0,0.15);
   margin-left: 0px;
+  padding-left: 60px;
 }
 .nav-side-menu ul .sub-menu li:hover,
 .nav-side-menu li .sub-menu li:hover {
-  background-color: #020203;
+  background-color: rgb(254, 209, 49);
 }
 .nav-side-menu ul .sub-menu li:before,
 .nav-side-menu li .sub-menu li:before {
@@ -214,7 +223,7 @@
 }
 .nav-side-menu li a {
   text-decoration: none;
-  color: #e1ffff;
+  color: #000;
 }
 .nav-side-menu li a i {
   padding-left: 10px;
@@ -222,13 +231,13 @@
   padding-right: 20px;
 }
 .nav-side-menu li:hover {
-  border-left: 3px solid #d19b3d;
-  background-color: #4f5b69;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
+  padding-left: 20px;
+  background-color: rgb(254, 209, 49);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 @media (max-width: 767px) {
   .nav-side-menu {
