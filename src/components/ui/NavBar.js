@@ -20,9 +20,6 @@ export default class NavBar extends React.Component {
           <div className="navbar-collapse collapse" id="navbar-main">
             <ul className="nav navbar-nav">
               <li>
-                <Link to="/chart">Kaavio</Link>
-              </li>
-              <li>
                 <Link to="/forum">Keskustelu</Link>
               </li>
               <li>
