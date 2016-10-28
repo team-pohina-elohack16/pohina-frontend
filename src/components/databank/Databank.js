@@ -1,6 +1,6 @@
 import React from "react";
 
-import Discussion from "components/discussion/discussion";
+import Discussion from "components/discussion/Discussion";
 
 export default class DataBank extends React.Component {
 
