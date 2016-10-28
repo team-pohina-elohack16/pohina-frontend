@@ -107,14 +107,15 @@ export default class Forum extends React.Component {
         { q: "Suosituksia tilitoimistoista?", a: "toinen vastaus" },
         { q: "Mistä edulliset nettisivut yrityselle?", a: "tee näin" },
         { q: "Tarvitsee alv maksaa kuukausittain?", a: "jia boi" },
-        { q: "Milloin starttirahaa haetaan?", a: "emt" },
+        { q: "Ensimmäisen työntekijän palkkaaminen?", a:
+        "Työvoimatoimisto voi myöntää työnantajalle palkkatukea työttömän henkilön palkkauskustannuksiin, jos työnhakija ei työllisty avoimille työmarkkinoille tai jos hän ei sijoitu koulutukseen." },
       ];
 
       var questionId = 0;
 
 
       const questionsAndAnswers2 = [
-        { q: "Ensimmäisen työntekijän palkkaaminen?", a:
+        { q: "Milloin starttirahaa haetaan?", a:
           `---
           ` },
       ];
