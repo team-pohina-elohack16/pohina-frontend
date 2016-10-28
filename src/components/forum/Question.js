@@ -15,6 +15,7 @@ export default class Forum extends React.Component {
   }
   render() {
     const question = this.props.question;
+    const answer = this.props.answer;
     const content = this.state.content;
     return (
       <MuiThemeProvider>
@@ -31,7 +32,7 @@ export default class Forum extends React.Component {
               </div>
             </div>
             <div className="pohina-forum-panel-outmost pohina-answer collapse" id="answer1">
-              <p>answer here</p>
+              <p dangerouslySetInnerHTML={{__html: answer}} />
             </div>
           </div>
 
