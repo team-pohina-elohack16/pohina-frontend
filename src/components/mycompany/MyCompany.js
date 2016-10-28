@@ -1,7 +1,7 @@
 import React from "react";
-import Question from './Question';
+import Question from '../forum/Question';
 
-export default class Forum extends React.Component {
+export default class MyCompany extends React.Component {
     renderSideNavbar() {
       return (
         <div className="nav-side-menu fixed-pos">
@@ -18,54 +18,6 @@ export default class Forum extends React.Component {
               <li data-toggle="collapse" data-target="#service" className="collapsed">
                 <a href="#" className="pohina-link">
                 Yrityksen perustaminen
-                <span className="pohina-icon ion-ios-arrow-down"></span>
-                </a>
-                </li>
-              <ul className="sub-menu collapse" id="service">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-              </ul>
-
-              <li data-toggle="collapse" data-target="#service" className="collapsed">
-                <a href="#" className="pohina-link">
-                Kirjanpidon tekeminen
-                <span className="pohina-icon ion-ios-arrow-down"></span>
-                </a>
-                </li>
-              <ul className="sub-menu collapse" id="service">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-              </ul>
-
-              <li data-toggle="collapse" data-target="#service" className="collapsed">
-                <a href="#" className="pohina-link">
-                Verojen maksaminen
-                <span className="pohina-icon ion-ios-arrow-down"></span>
-                </a>
-                </li>
-              <ul className="sub-menu collapse" id="service">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-              </ul>
-
-              <li data-toggle="collapse" data-target="#service" className="collapsed">
-                <a href="#" className="pohina-link">
-                Henkilöstön palkkaaminen
-                <span className="pohina-icon ion-ios-arrow-down"></span>
-                </a>
-                </li>
-              <ul className="sub-menu collapse" id="service">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-              </ul>
-
-              <li data-toggle="collapse" data-target="#service" className="collapsed">
-                <a href="#" className="pohina-link">
-                Yrityksen kasvattaminen
                 <span className="pohina-icon ion-ios-arrow-down"></span>
                 </a>
                 </li>
@@ -115,7 +67,6 @@ export default class Forum extends React.Component {
         </div>
       )
     }
-
     render() {
       return (
         <div>

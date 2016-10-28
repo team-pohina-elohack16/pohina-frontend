@@ -28,6 +28,9 @@ export default class NavBar extends React.Component {
               <li>
                 <Link to="/databank">Tietopankki</Link>
               </li>
+              <li>
+                <Link to="/mycompany">Yritykseni</Link>
+              </li>
             </ul>
 
             <ul className="nav navbar-nav navbar-right">
