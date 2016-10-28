@@ -1,5 +1,6 @@
 import React from "react";
 import Question from '../forum/Question';
+import BasicInfo from '../mycompany/BasicInfo';
 
 export default class MyCompany extends React.Component {
     renderSideNavbar() {
@@ -9,23 +10,26 @@ export default class MyCompany extends React.Component {
 
           <div className="menu-list">
             <ul id="menu-content" className="menu-content collapse out">
+
               <li>
                 <a href="#" className="pohina-link">
-                Kuinka tulla yrittäjäksi
+                Perustiedot
                 </a>
               </li>
 
-              <li data-toggle="collapse" data-target="#service" className="collapsed">
+              <li>
                 <a href="#" className="pohina-link">
-                Yrityksen perustaminen
-                <span className="pohina-icon ion-ios-arrow-down"></span>
+                Talouden seuranta
                 </a>
-                </li>
-              <ul className="sub-menu collapse" id="service">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-              </ul>
+              </li>
+
+              <li>
+                <a href="#" className="pohina-link">
+                Markkinoiden seuranta
+                </a>
+              </li>
+
+
 
             </ul>
           </div>
@@ -37,34 +41,8 @@ export default class MyCompany extends React.Component {
     }
 
     renderContent() {
-      const questions = [
-        "Kysymyksiä ja vastauksia yrittäjyydestä",
-        "Suosituksia tilitoimistoista?",
-        "Mistä edulliset nettisivut yrityselle?",
-        "Tarvitsee alv maksaa kuukausittain?",
-        "Milloin starttirahaa haetaan?",
-        "Ensimmäisen työntekijän palkkaaminen?"
-      ];
       return (
-        <div className="pohina-besides-sidebar">
-          <div className="page-header" id="banner">
-            <div className="row">
-              <div className="">
-                <h1>Q&A</h1>
-                <p className="lead">Kysymyksiä ja vastauksia yrittäjyydestä</p>
-              </div>
-              <div className="col-lg-4 col-md-5 col-sm-6">
-                <div className="sponsor">
-                </div>
-              </div>
-            </div>
-            {
-              questions.map((q) => (
-                <Question question={q} key={q} />
-              ))
-            }
-          </div>
-        </div>
+        <BasicInfo></BasicInfo>
       )
     }
     render() {

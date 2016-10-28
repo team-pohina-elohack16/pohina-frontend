@@ -85,19 +85,46 @@ export default class Forum extends React.Component {
     }
 
     renderContent() {
-      const questions = [
-        "Kysymyksiä ja vastauksia yrittäjyydestä",
-        "Suosituksia tilitoimistoista?",
-        "Mistä edulliset nettisivut yrityselle?",
-        "Tarvitsee alv maksaa kuukausittain?",
-        "Milloin starttirahaa haetaan?",
-        "Ensimmäisen työntekijän palkkaaminen?"
+      const questionsAndAnswers = [
+        { q: "Yrityksen perustamisen vaiheet", a:
+          `<li>1. Oma halu ja tahto aloittaa yritystoiminta.</li>
+          <li>2. Liiketoimintasuunnitelman laatiminen. Liiketoimintasuunnitelman laatimiseen saa apua mm. Uusyrityskeskuksista ja ELY-keskuksista.</li>
+          <li>3. Yritysmuodon valinta (toiminimi, avoin yhtiö, kommandiittiyhtiö, osakeyhtiö, osuuskunta).</li>
+          <li>4. Yritystoiminnan luvanvaraisuuden selvittäminen.</li>
+          <li>5. Perustamisilmoitus yritystietojärjestelmään.</li>
+          <li>6. Perustamisilmoituksella voidaan ilmoittautua myös kaupparekisteriin, arvonlisäverovelvolliseksi, ennakkoperintärekisteriin ja työnantajarekisteriin.</li>
+          <li>7. Kirjanpidon järjestäminen ja tarvittavien vakuutusten ottaminen. </li>
+          ` },
+        { q: "Kysymyksiä ja vastauksia yrittäjyydestä", a: "vastaus" },
+        { q: "Suosituksia tilitoimistoista?", a: "toinen vastaus" },
+        { q: "Mistä edulliset nettisivut yrityselle?", a: "tee näin" },
+        { q: "Tarvitsee alv maksaa kuukausittain?", a: "jia boi" },
+        { q: "Milloin starttirahaa haetaan?", a: "emt" },
       ];
+
+      var questionId = 0;
+
+
+      const questionsAndAnswers2 = [
+        { q: "Ensimmäisen työntekijän palkkaaminen?", a:
+          `---
+          ` },
+      ];
+
+      const questionsAndAnswers3 = [
+        { q: "Suositukset vuokratyöyrityksistä Helsingissä??", a:
+          `---
+          ` },
+      ];
+
       return (
         <div className="pohina-besides-sidebar">
           <div className="page-header" id="banner">
             <div className="row">
               <div className="">
+                <button className="ask-button panel panel-default pohina-forum-panel-outmost">
+                  Kysy yrittäjyydestä!
+                </button>
                 <h1>Q&A</h1>
                 <p className="lead">Kysymyksiä ja vastauksia yrittäjyydestä</p>
               </div>
@@ -106,11 +133,31 @@ export default class Forum extends React.Component {
                 </div>
               </div>
             </div>
+
+            <p className="lead">Sinulle suositellut</p>
             {
-              questions.map((q) => (
-                <Question question={q} key={q} />
+              questionsAndAnswers.map((q) => (
+                <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
               ))
             }
+            <br/>
+
+            <p className="lead">Uusimmat</p>
+            {
+              questionsAndAnswers2.map((q) => (
+                <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
+              ))
+            }
+            <br/>
+
+            <p className="lead">Uusimmat</p>
+            {
+              questionsAndAnswers3.map((q) => (
+                <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
+              ))
+            }
+            <br/>
+
           </div>
         </div>
       )

@@ -15,16 +15,31 @@ export default class Forum extends React.Component {
   }
   render() {
     const question = this.props.question;
+    const answer = this.props.answer;
+    const questionId = this.props.questionId;
     const content = this.state.content;
     return (
       <MuiThemeProvider>
-        <div className="question-style">
-          <Paper zDepth={3}>
-            <br/>
-              {question}
-            <br/>
-          </Paper>
-        </div>
+        
+          <div className="q-and-a-wrapper">
+            <div className="panel panel-default pohina-forum-panel-outmost pohina-question">
+              <div className="panel-body collapsed" data-toggle="collapse" data-target={"#"+questionId}>
+              <div id="textbox">
+                <p className="pohina-alignleft">{question}</p>
+                <div className="pohina-alignright">
+                  <p className="pohina-answered-by">
+                    Answered by <a>Elo</a> <i className="verified-checkmark ion-checkmark-circled"></i>
+                  </p>
+                  <i className="ion-chevron-down"></i>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div className="pohina-forum-panel-outmost pohina-answer collapse" id={""+questionId}>
+              <p dangerouslySetInnerHTML={{__html: answer}} />
+            </div>
+          </div>
+
       </MuiThemeProvider>
     );
   }

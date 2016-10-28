@@ -1,5 +1,21 @@
+@font-face {
+  font-family: PohinaFont;
+  src: url("fonts/ADAM.CG-PRO.otf");
+  font-weight:400;
+}
+
 .main-container {
   margin-top: 30px;
+}
+
+.pohina-frontpage-container {
+  height:auto!important;
+  /*min-height: 400px;*/
+  background-image: url("img/frontpage-background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .m-top {
@@ -20,8 +36,13 @@
 
 .pohina-paper-content-header {
   padding-bottom: 9.5px;
-  margin: 42px 0 21px;
   border-bottom: 1px solid #dddddd;
+}
+
+.paper-paper-content-text {
+  margin: 0;
+  max-height: 32px;
+  overflow: hidden;
 }
 
 .pohina-container-m-top {
@@ -29,11 +50,11 @@
 }
 
 .pohina-navbar {
-  margin-left: 12%;
+  margin-left: 110px;
 }
 
 .pohina-navbar-logo {
-  width: 50px;
+  width: 56px;
   position: absolute;
   left: 40px;
   top: 15px;
@@ -47,6 +68,23 @@
   float: right;
   margin-right: 20px;
   font-size: 20px;
+}
+
+.pohina-paper-header-icon {
+  float: right;
+}
+
+.pohina-paper-icon {
+  float: left;
+  font-size: 25px;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.pohina-filler {
+  float: left;
+  width: 50%;
+  height: 1px;
 }
 
 .pohina-sidebar-wrapper {
@@ -81,7 +119,17 @@
 
 .pohina-forum-panel-outmost {
   border-radius: 5px;
-  margin: 5px;
+  margin: 0;
+}
+.pohina-question:hover {
+  padding-left: 15px;
+  cursor: pointer;
+  background-color: rgb(254, 209, 49);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .pohina-alignleft {
@@ -92,6 +140,41 @@
 .pohina-alignright {
   margin: 0px;
 	float: right;
+}
+
+.pohina-answered-by {
+  font-size: 12px;
+  display: inline;
+  margin-right: 30px;
+}
+
+.pohina-answered-by .verified-checkmark {
+  color: #3adf35;
+}
+
+.pohina-answer {
+  z-index: -1;
+}
+
+.pohina-answer.collapsing {
+  padding-left: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  border-top: none;
+}
+.pohina-answer.collapse {
+  padding-left: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  border-top: none;
+}
+
+.pohina-answer p {
+  padding-top: 7px;
+}
+
+.q-and-a-wrapper {
+  padding: 5px;
 }
 
 .navbar-inverse {
@@ -115,10 +198,9 @@
 .navbar-inverse .navbar-nav>li>a {
   color: #000000;
   font-size: 15px;
-  margin-top: 15px;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  margin-bottom: 0;
+  margin: 10px 10px 5px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 3px;
 }
 
@@ -266,21 +348,7 @@
   padding-right: 20px;
 }
 .nav-side-menu li:hover {
-  border-left: 3px solid #d19b3d;
-  background-color: #4f5b69;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  border-left: 3px solid #d19b3d;
-  background-color: #006687;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  padding-left: 20px;
+  padding-left: 15px;
   background-color: rgb(254, 209, 49);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -347,19 +415,75 @@ body {
   border-top: 20px solid #f00;
 }
 
-.welcome img {
+.pohina-welcome-container-wrapper {
+  position: absolute;
+  top: 76px;
+  left: 0;
   width: 100%;
 }
 
-.welcome h1 {
+.pohina-welcome-background {
   position: absolute;
-  width: 90%;
-  height: 100%;
-  margin: -42% auto auto 8%;
+  height: 500px;
+  width: 100%;
+}
+
+.pohina-welcome-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 23% 0 0 0;
   color: white;
   font-size: 50px;
+  text-align: center;
+}
+
+.pohina-welcome-container-header {
+  margin-bottom: 75px;
+}
+
+.pohina-welcome-icon {
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.pohina-welcome-logo {
+  width: 400px;
+}
+
+.pohina-welcome-header {
+  font-family: PohinaFont, Helvetica, Arial, sans-serif;
+}
+
+.pohina-welcome-card {
+  height: 500px;
+  margin: 120px 0 0 0;
+  text-align: center;
+}
+
+.pohina-welcome-card-nomargin {
+  height: 500px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.pohina-welcome-card-inverse {
+  background-color: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+  height: 500px;
+  margin: 120px 0 0 0;
+  text-align: center;
 }
 
 .question-style {
   margin-top: 10px;
+}
+
+.ask-button {
+  margin-right: 20px;
+  float: right;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(254, 209, 49);
+  padding: 10px;
 }
