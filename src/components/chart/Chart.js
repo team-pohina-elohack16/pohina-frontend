@@ -5,10 +5,11 @@ export class ChartThing extends React.Component {
 
   componentDidMount() {
     const { data } = this.props
-    const colors = createColors(data.length);
+    //const colors = createColors(data.length);
+    const colors = ['hsla(115, 90%, 70%, 1)', 'hsla(12, 90%, 70%, 1)']
     var colorIndex = 0;
     const datasets = data.map(e => createDataset(e.title, e.values, colors[colorIndex++]))
-    datasets.push(createAverageDataset(datasets));
+    //datasets.push(createAverageDataset(datasets));
     //datasets.push(datasets);
 
     const ctx = document.getElementById("myChart");
