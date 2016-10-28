@@ -86,99 +86,37 @@ export default class Forum extends React.Component {
 
     renderContent() {
       const questionsAndAnswers = [
-        { q: "Yrityksen perustaminen", a:
-          `<h2>Yrityksen perustaminen</h2>
-          <p>
-            Eikö olisikin mahtavaa olla yrittäjä? Oman onnensa seppä. Työpaikkojen luoja.
-            Suomen talouden tuki. Yrittäjäksi ryhtyminen vaatii paljon motivaatiota ja
-            omistautumista halukkaalta/xxx mutta kaikkien vaikeuksien jälkeenkin se on
-            palkitseva tapa elättää itsensä. Tämän oppaan tarkoituksena on olla helppona
-            tutustumisena yrittäjyyteen ja sen tuomiin haasteisiin.
-          </p>
-
-          <h3>Liikeidean validointi</h3>
-          <p>
-            Tämä on ehkä se tärkein kysymys yrittäjyksi haluaville; onko tälle palvelulle
-            tai tuotteelle kysyntää? Vaikka se saattaa tuntua itsestään selvältä ei kannata
-            unohtaa oman tuotteen jatkuvaa arviointia ja asiakkaiden xxx.
-          </p>
-
-          <h3>Yritysmuodon valinta</h3>
-          <p>
-            Jos ideasi vaikuttaa hyvältä ja tunnet asiakkaita, jotka ovat jo kertoneet
-            halustaan ostaa sinulta tuotteitasi niin eihän siinä muu auta kuin ryhtyä
-            yrittämään! Ensimmäisenä tulee miettiä minkä yritysmuodon yrityksellesi valitset:
-          </p>
-
-          <h4>Toiminimi</h4>
-          <p>
-            Ajattelitko hoitaa tekemiesi taulujen ja putkitöiden myymisen ilman suurempaa
-            häslinkiä? Tuleeko liikevaihtosi olemaan alle 10 000€ vuodessa? Etkö tarvitse
-            sen suurempia investointeja päästäksesi alkuun? Toiminimi on helppo tapa aloittaa
-            yrittäminen ja se tarjoaa tavan myydä ja veloittaa helposti ja vaivattomasti.
-          </p>
-
-          <h4>Kommandiittiyhtiö</h4>
-          <p>
-            Maksaako kalja liikaa etkä halua osakkeita? Öh ah.
-          </p>
-
-          <h4>Osakeyhtiö</h4>
-          <p>
-            Onko sinulle suunnitelmissa kasvattaa yritystäsi nopeasti ja tarvitko investointeja
-            päästäksesi alkuun? ÖÖ ää. Tarvitset 2000€ ja talosi pantiksi.
-          </p>
-
-          <h4>Joku???</h4>
-          <p></p>
-
-          <h3>Perustamisilmoituksen lähettäminen</h3>
-          <p>
-            Meepä tänne ja ilmoita että haluat yrittäjäksi.
-            kaupparekisteriin, arvonlisäverovelvolliseksi, ennakkoperintärekisteriin ja työnantajarekisteriin
-          </p>
-
-          <h3>Starttirahan hakeminen</h3>
-          <p>
-            Uusille yrittäjille usein tarjotaan starttirahaa, jota kandeis hakee.
-          </p>
-
-          <h3>Ota itsellesi vakuutus</h3>
-          <p>
-            Ilman vakuutusta keikut hivenen kuin kallion reunalla ilman riippuliidintä.
-            Älä ole tyhmä, osta vakuutusta Elolta jo nyt!
-          </p>
-
-          <h3>Valitse itsellesi kirjanpitäjä</h3>
-          <p>
-            Kirjanpito on tarkkaa ja työlästä hommaa, jossa ei sovi tehdä virheitä.
-            Siksi usein aloittavat yrittäjät hakeutuvat käyttämään ulkoisia palveluita
-            jotka hoitavat sen heidän puolestaan. Lue *Kirjanpito* opas jossa kerromme
-            lisää mitä kirjanpito pitää sisällään ja mitä yrittäjän tulisi siitä vähintäänkin
-            tietää. Tavallisesti vuosittainen kirjanpito maksaa pienyrittäjälle xxx vuodessa.
-            Tämän *linkin* kautta voit etsiä itsellesi sopivaa kirjanpitäjää.
-          </p>
-
-          <h3>Kun tulee ongelmia</h3>
-          <p>
-            Tule takaisin tänne ja löydä itsellesi tarkoitus.
-          </p>
-
-          <h3>Jotain jotain</h3>
-          <p>
-            Näillä ohjeilla sinun tulisi jo päästä hyvälle alulle yrittämiseen.
-            Toivotamme sinulle paljon onnea ja intoa yrittämiseen. Elo tukee täysillä
-            suomalaista yrittämistä ja haluamme sinunkin siinä onnistuvan parhaalla mahdollisella
-            tavalla!
-          </p>` },
+        { q: "Yrityksen perustamisen vaiheet", a:
+          `<li>1. Oma halu ja tahto aloittaa yritystoiminta.</li>
+          <li>2. Liiketoimintasuunnitelman laatiminen. Liiketoimintasuunnitelman laatimiseen saa apua mm. Uusyrityskeskuksista ja ELY-keskuksista.</li>
+          <li>3. Yritysmuodon valinta (toiminimi, avoin yhtiö, kommandiittiyhtiö, osakeyhtiö, osuuskunta).</li>
+          <li>4. Yritystoiminnan luvanvaraisuuden selvittäminen.</li>
+          <li>5. Perustamisilmoitus yritystietojärjestelmään.</li>
+          <li>6. Perustamisilmoituksella voidaan ilmoittautua myös kaupparekisteriin, arvonlisäverovelvolliseksi, ennakkoperintärekisteriin ja työnantajarekisteriin.</li>
+          <li>7. Kirjanpidon järjestäminen ja tarvittavien vakuutusten ottaminen. </li>
+          ` },
         { q: "Kysymyksiä ja vastauksia yrittäjyydestä", a: "vastaus" },
         { q: "Suosituksia tilitoimistoista?", a: "toinen vastaus" },
         { q: "Mistä edulliset nettisivut yrityselle?", a: "tee näin" },
         { q: "Tarvitsee alv maksaa kuukausittain?", a: "jia boi" },
         { q: "Milloin starttirahaa haetaan?", a: "emt" },
-        { q: "Ensimmäisen työntekijän palkkaaminen?", a: "wtf" }
       ];
+
       var questionId = 0;
+
+
+      const questionsAndAnswers2 = [
+        { q: "Ensimmäisen työntekijän palkkaaminen?", a:
+          `---
+          ` },
+      ];
+
+      const questionsAndAnswers3 = [
+        { q: "Suositukset vuokratyöyrityksistä Helsingissä??", a:
+          `---
+          ` },
+      ];
+
       return (
         <div className="pohina-besides-sidebar">
           <div className="page-header" id="banner">
@@ -195,11 +133,31 @@ export default class Forum extends React.Component {
                 </div>
               </div>
             </div>
+
+            <p className="lead">Sinulle suositellut</p>
             {
               questionsAndAnswers.map((q) => (
                 <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
               ))
             }
+            <br/>
+
+            <p className="lead">Uusimmat</p>
+            {
+              questionsAndAnswers2.map((q) => (
+                <Question question={q.q}  answer={q.a} key={q.q} />
+              ))
+            }
+            <br/>
+
+            <p className="lead">Uusimmat</p>
+            {
+              questionsAndAnswers3.map((q) => (
+                <Question question={q.q}  answer={q.a} key={q.q} />
+              ))
+            }
+            <br/>
+
           </div>
         </div>
       )
