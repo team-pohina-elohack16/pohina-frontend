@@ -142,6 +142,16 @@
 	float: right;
 }
 
+.pohina-answered-by {
+  font-size: 12px;
+  display: inline;
+  margin-right: 30px;
+}
+
+.pohina-answered-by .verified-checkmark {
+  color: #3adf35;
+}
+
 .pohina-answer {
   z-index: -1;
 }
