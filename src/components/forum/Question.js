@@ -1,5 +1,7 @@
 import React from "react";
 import Answer from "./Answer";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Paper from 'material-ui/Paper';
 
 export default class Forum extends React.Component {
   constructor(props) {
@@ -15,16 +17,15 @@ export default class Forum extends React.Component {
     const question = this.props.question;
     const content = this.state.content;
     return (
-      <div className="panel panel-default pohina-forum-panel-outmost">
-        <div className="panel-body">
-        <div id="textbox">
-          <p className="pohina-alignleft">{question}</p>
-          <div className="pohina-alignright">
-            <i className="ion-chevron-down"></i>
-          </div>
+      <MuiThemeProvider>
+        <div className="question-style">
+          <Paper zDepth={3}>
+            <br/>
+              {question}
+            <br/>
+          </Paper>
         </div>
-        </div>
-      </div>
+      </MuiThemeProvider>
     );
   }
 }
