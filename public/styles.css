@@ -113,7 +113,16 @@
 
 .pohina-forum-panel-outmost {
   border-radius: 5px;
-  margin: 5px;
+  margin: 0;
+}
+.pohina-question:hover {
+  padding-left: 15px;
+  background-color: rgb(254, 209, 49);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .pohina-alignleft {
@@ -124,6 +133,31 @@
 .pohina-alignright {
   margin: 0px;
 	float: right;
+}
+
+.pohina-answer {
+  z-index: -1;
+}
+
+.pohina-answer.collapsing {
+  padding-left: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  border-top: none;
+}
+.pohina-answer.collapse {
+  padding-left: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  border-top: none;
+}
+
+.pohina-answer p {
+  padding-top: 7px;
+}
+
+.q-and-a-wrapper {
+  padding: 5px;
 }
 
 .navbar-inverse {
@@ -298,21 +332,7 @@
   padding-right: 20px;
 }
 .nav-side-menu li:hover {
-  border-left: 3px solid #d19b3d;
-  background-color: #4f5b69;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  border-left: 3px solid #d19b3d;
-  background-color: #006687;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  padding-left: 20px;
+  padding-left: 15px;
   background-color: rgb(254, 209, 49);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -422,4 +442,8 @@ body {
   height: 500px;
   margin: 120px 0 0 0;
   text-align: center;
+}
+
+.question-style {
+  margin-top: 10px;
 }

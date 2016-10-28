@@ -1,16 +1,12 @@
 const INITIAL_STATE = {
   data: [ // Example datasets:
     {
-      title: "Peran Putki Oy",
-      values: [ 1, 2, 4, 1, 5, 8 ]
+      title: "Avatut ohjelmistoalan yritykset",
+      values: [ 104, 79, 77, 83, 92, 85, 89, 77, 103, 68, 91, 79, 104 ]
     },
     {
-      title: "Pertin Putki Oy",
-      values: [ 4, 6, 1, 4, 4, 3 ]
-    },
-    {
-      title: "Pöhinä-Putki Oy",
-      values: [ 1, 3, 5, 7, 8, 2 ]
+      title: "Suljetut ohjelmistoalan yritykset",
+      values: [ 41, 32, 34, 72, 45, 66, 62, 113, 46, 50, 40, 84 ]
     }
   ]
 };
