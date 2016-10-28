@@ -98,6 +98,9 @@ export default class Forum extends React.Component {
           <div className="page-header" id="banner">
             <div className="row">
               <div className="">
+                <button className="ask-button panel panel-default pohina-forum-panel-outmost">
+                  Kysy yrittäjyydestä!
+                </button>
                 <h1>Q&A</h1>
                 <p className="lead">Kysymyksiä ja vastauksia yrittäjyydestä</p>
               </div>
