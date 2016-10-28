@@ -53,7 +53,7 @@ export default class FrontPage extends React.Component {
                 </div>
                 <div className="col-md-6">
                   <div className="feature">
-                    <h3 className="feature__title">Löydä uusia tapoja parantaa yritystäsi</h3>
+                    <h3 className="feature__title">Löydä uusia tapoja yrittämiseen</h3>
                     <p className="feature__description">
                       Palvelumme avulla voit löytää uusia vinkkejä ja apuvälineitä parantaaksesi
                       yritystäsi.
