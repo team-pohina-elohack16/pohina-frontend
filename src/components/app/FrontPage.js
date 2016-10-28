@@ -25,7 +25,7 @@ export default class FrontPage extends React.Component {
                 <div className="feature">
                   <h3 className="feature__title">Kohdennettu sisältö</h3>
                   <p className="feature__description">
-                    Elo Entrepreneur Hub tarjoaa tavan löytää juuri sinulle sopivaa tietoa.
+                    Elo Entrepreneur Hub tarjoaa tavan löytää juuri yrityksesi tilanteeseen sopivaa tietoa.
                   </p>
                 </div>
               </div>

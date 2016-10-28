@@ -95,16 +95,13 @@ export default class Forum extends React.Component {
     renderContent() {
       const questionsAndAnswers = [
         { q: "Suosituksia tilitoimistoista?", a: "--" },
-        { q: "Mistä edulliset nettisivut yrityselle?", a: "tee näin" },
+        { q: "Mistä edulliset nettisivut yritykselle?", a: "tee näin" },
         { q: "Tarvitsee alv maksaa kuukausittain?", a: "jia boi" },
         { q: "Ensimmäisen työntekijän palkkaaminen?", a:
         `Työvoimatoimisto voi myöntää työnantajalle palkkatukea työttömän henkilön palkkauskustannuksiin, jos työnhakija ei työllisty avoimille työmarkkinoille tai jos hän ei sijoitu koulutukseen.
         <br><br>
         <a>Ohjemistotyöntekijöitä te-toimiston cv-netissä</a>` },
       ];
-
-      var questionId = 0;
-
 
       const questionsAndAnswers2 = [
         { q: "Milloin starttirahaa haetaan?", a:
@@ -116,7 +113,7 @@ export default class Forum extends React.Component {
       ];
 
       const propertiesToFilter = ['q', 'a'];
-      const filteredQuestions = questionsAndAnswers.filter(createFilter(this.state.searchTerm, propertiesToFilter));
+      var questionId = 0;
 
       return (
         <div className="pohina-besides-sidebar">
@@ -138,7 +135,7 @@ export default class Forum extends React.Component {
 
             <p className="lead">Sinulle suositellut</p>
             {
-              filteredQuestions.map((q) => (
+              questionsAndAnswers.filter(createFilter(this.state.searchTerm, propertiesToFilter)).map((q) => (
                 <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
               ))
             }
