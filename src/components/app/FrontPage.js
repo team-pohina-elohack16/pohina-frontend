@@ -16,30 +16,53 @@ export default class FrontPage extends React.Component {
         <div className="pohina-welcome-card-nomargin">
           <img className="pohina-welcome-logo" src="img/elo_logo.png" />
           <h1 className="pohina-welcome-header">Entrepreneur hub</h1>
-          <p>
+          <p className="pohina-welcome-paragraph">
             Paras paikka etsiä ja löytää tietoa yrittäjyydestä.
           </p>
-          <ul>
-            <li>
-              Adaptoituva haku.
-            </li>
-            <li>
-              Vertaa yritystäsi muihin samanalan yrityksiin.
-            </li>
-            <li>
-              Kysy ja jaa tietoa yrittäjyydestä.
-            </li>
-            <li>
-              Löydä uusia tapoja parantaa yritystäsi.
-            </li>
-          </ul>
-        </div>
-        <div className="pohina-welcome-card-inverse">
-          <h1>Löydä sinulle sopivat palvelut</h1>
-          <p>
-            Elo entrepreneur hub tarjoaa luotettavia yhteistyökumppaneita
-            sinunkin yrityksellesi.
-          </p>
+          <span className="dividing-header"></span>
+          <div className="pohina-feature-container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="feature">
+                  <h3 className="feature__title">Kohdennettu sisältö</h3>
+                  <p className="feature__description">
+                    Elo Entrepreneur Hub tarjoaa tavan löytää juuri sinulle sopivaa tietoa.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="feature">
+                  <h3 className="feature__title">Avoimen datan haku</h3>
+                  <p className="feature__description">
+                    Hubin kautta löydät kaikkea dataa suomalaisista yrityksistä avoimen
+                    datan lähteistä.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="medium-12 large-6 columns">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="feature">
+                    <h3 className="feature__title">Kysy ja jaa tietoa yrittäjyydestä</h3>
+                    <p className="feature__description">
+                      Onko sinulla vaikea kysymys johon etsit vastausta? Hubin kautta voit
+                      kysyä muilta yrittäjiltä ja jakaa omaa tietämystäsi.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="feature">
+                    <h3 className="feature__title">Löydä uusia tapoja parantaa yritystäsi</h3>
+                    <p className="feature__description">
+                      Palvelumme avulla voit löytää uusia vinkkejä ja apuvälineitä parantaaksesi
+                      yritystäsi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

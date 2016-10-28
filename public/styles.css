@@ -422,19 +422,21 @@ body {
   position: relative;
   width: 100%;
   height: 500px;
-  margin: 23% 0 0 0;
+  margin: 200px 0 0 0;
   color: white;
   font-size: 50px;
   text-align: center;
 }
 
 .pohina-welcome-container-header {
-  margin-bottom: 75px;
+  /*margin-bottom: 75px;*/
 }
 
 .pohina-welcome-icon {
   font-size: 60px;
   cursor: pointer;
+  position: relative;
+  top: 100px;
 }
 
 .pohina-welcome-logo {
@@ -445,6 +447,10 @@ body {
   font-family: PohinaFont, Helvetica, Arial, sans-serif;
 }
 
+.pohina-welcome-paragraph {
+  margin: 40px 0 0 0;
+}
+
 .pohina-welcome-card {
   height: 500px;
   margin: 120px 0 0 0;
@@ -452,8 +458,9 @@ body {
 }
 
 .pohina-welcome-card-nomargin {
-  height: 500px;
+  height: 700px;
   margin-left: 10px;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -463,6 +470,23 @@ body {
   height: 500px;
   margin: 120px 0 0 0;
   text-align: center;
+}
+
+.pohina-feature-container {
+  margin: 60px 20px 0px 30px;
+  /*margin-left: 10px;*/
+}
+
+.feature {
+  text-align: left;
+}
+
+.dividing-header {
+  display: block;
+  padding-bottom: 9.5px;
+  border-bottom: 1px solid #dddddd;
+  /*width: 300px;*/
+  margin: 0 200px 0 200px;
 }
 
 .question-style {
