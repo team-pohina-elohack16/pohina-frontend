@@ -103,19 +103,25 @@
 	float: right;
 }
 
+.pohina-answer {
+  z-index: -1;
+}
+
 .pohina-answer.collapsing {
   padding-left: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  border-top: none;
 }
 .pohina-answer.collapse {
-  top: 5px;
   padding-left: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  border-top: none;
 }
+
 .pohina-answer p {
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .q-and-a-wrapper {

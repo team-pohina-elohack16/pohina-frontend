@@ -39,9 +39,3 @@ export default class Forum extends React.Component {
     );
   }
 }
-
-        // <div className="question-style">
-        //     <br/>
-        //       {question}
-        //     <br/>
-        // </div>
