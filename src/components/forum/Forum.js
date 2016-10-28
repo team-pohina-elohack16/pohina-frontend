@@ -138,7 +138,7 @@ export default class Forum extends React.Component {
                 </button>
                 <h1>Q&A</h1>
                 <p className="lead">Kysymyksiä ja vastauksia yrittäjyydestä</p>
-                <SearchInput className="search-input" onChange={this.searchUpdated} />
+                <SearchInput className="search-input" onChange={this.searchUpdated} placeholder="Hae&hellip;"/>
               </div>
               <div className="col-lg-4 col-md-5 col-sm-6">
                 <div className="sponsor">
