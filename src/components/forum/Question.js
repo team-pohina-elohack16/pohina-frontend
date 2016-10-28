@@ -16,13 +16,14 @@ export default class Forum extends React.Component {
   render() {
     const question = this.props.question;
     const answer = this.props.answer;
+    const questionId = this.props.questionId;
     const content = this.state.content;
     return (
       <MuiThemeProvider>
         
           <div className="q-and-a-wrapper">
             <div className="panel panel-default pohina-forum-panel-outmost pohina-question">
-              <div className="panel-body collapsed" data-toggle="collapse" data-target="#answer1">
+              <div className="panel-body collapsed" data-toggle="collapse" data-target={"#"+questionId}>
               <div id="textbox">
                 <p className="pohina-alignleft">{question}</p>
                 <div className="pohina-alignright">
@@ -31,7 +32,7 @@ export default class Forum extends React.Component {
               </div>
               </div>
             </div>
-            <div className="pohina-forum-panel-outmost pohina-answer collapse" id="answer1">
+            <div className="pohina-forum-panel-outmost pohina-answer collapse" id={""+questionId}>
               <p dangerouslySetInnerHTML={{__html: answer}} />
             </div>
           </div>

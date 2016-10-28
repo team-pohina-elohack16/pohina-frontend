@@ -178,6 +178,7 @@ export default class Forum extends React.Component {
         { q: "Milloin starttirahaa haetaan?", a: "emt" },
         { q: "Ensimmäisen työntekijän palkkaaminen?", a: "wtf" }
       ];
+      var questionId = 0;
       return (
         <div className="pohina-besides-sidebar">
           <div className="page-header" id="banner">
@@ -196,7 +197,7 @@ export default class Forum extends React.Component {
             </div>
             {
               questionsAndAnswers.map((q) => (
-                <Question question={q.q}  answer={q.a} key={q.q} />
+                <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
               ))
             }
           </div>
