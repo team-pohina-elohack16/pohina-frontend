@@ -20,8 +20,13 @@
 
 .pohina-paper-content-header {
   padding-bottom: 9.5px;
-  margin: 42px 0 21px;
   border-bottom: 1px solid #dddddd;
+}
+
+.paper-paper-content-text {
+  margin: 0;
+  max-height: 32px;
+  overflow: hidden;
 }
 
 .pohina-container-m-top {
@@ -33,7 +38,7 @@
 }
 
 .pohina-navbar-logo {
-  width: 50px;
+  width: 56px;
   position: absolute;
   left: 40px;
   top: 15px;
@@ -47,6 +52,23 @@
   float: right;
   margin-right: 20px;
   font-size: 20px;
+}
+
+.pohina-paper-header-icon {
+  float: right;
+}
+
+.pohina-paper-icon {
+  float: left;
+  font-size: 25px;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.pohina-filler {
+  float: left;
+  width: 50%;
+  height: 1px;
 }
 
 .pohina-sidebar-wrapper {
