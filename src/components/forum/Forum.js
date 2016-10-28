@@ -1,7 +1,15 @@
 import React from "react";
 import Question from './Question';
+import SearchInput, {createFilter} from 'react-search-input'
 
 export default class Forum extends React.Component {
+
+    constructor(props) {
+      super(props);
+      this.state = { searchTerm: '' };
+      this.searchUpdated = this.searchUpdated.bind(this)
+    }
+
     renderSideNavbar() {
       return (
         <div className="nav-side-menu fixed-pos">
@@ -117,6 +125,9 @@ export default class Forum extends React.Component {
           ` },
       ];
 
+      const propertiesToFilter = ['q', 'a'];
+      const filteredQuestions = questionsAndAnswers.filter(createFilter(this.state.searchTerm, propertiesToFilter));
+
       return (
         <div className="pohina-besides-sidebar">
           <div className="page-header" id="banner">
@@ -127,6 +138,7 @@ export default class Forum extends React.Component {
                 </button>
                 <h1>Q&A</h1>
                 <p className="lead">Kysymyksiä ja vastauksia yrittäjyydestä</p>
+                <SearchInput className="search-input" onChange={this.searchUpdated} />
               </div>
               <div className="col-lg-4 col-md-5 col-sm-6">
                 <div className="sponsor">
@@ -136,7 +148,7 @@ export default class Forum extends React.Component {
 
             <p className="lead">Sinulle suositellut</p>
             {
-              questionsAndAnswers.map((q) => (
+              filteredQuestions.map((q) => (
                 <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
               ))
             }
@@ -170,5 +182,9 @@ export default class Forum extends React.Component {
           { this.renderContent() }
         </div>
       );
+    }
+
+    searchUpdated(term) {
+      this.setState({searchTerm: term});
     }
 }
