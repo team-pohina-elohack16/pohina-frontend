@@ -422,24 +422,18 @@ body {
   width: 100%;
 }
 
-.pohina-welcome-background {
-  position: absolute;
-  height: 500px;
-  width: 100%;
-}
-
 .pohina-welcome-container {
+  background-image: url('https://images.unsplash.com/photo-1415045550139-59b6fafc832f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=24b01c30ad6fcf4b33aae390d57ffe2b');
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  height: 500px;
-  margin: 200px 0 0 0;
+  height: 720px;
+  padding: 300px 0 0 0;
+  margin-bottom: 200px;
   color: white;
   font-size: 50px;
   text-align: center;
-}
-
-.pohina-welcome-container-header {
-  /*margin-bottom: 75px;*/
 }
 
 .pohina-welcome-icon {

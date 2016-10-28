@@ -6,7 +6,6 @@ export default class FrontPage extends React.Component {
   render() {
     return (
       <div className="pohina-welcome-container-wrapper">
-        <img className="pohina-welcome-background" src="https://images.unsplash.com/photo-1415045550139-59b6fafc832f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=24b01c30ad6fcf4b33aae390d57ffe2b" />
         <div className="pohina-welcome-container">
           <h1 className="pohina-welcome-container-header">
             Tervetuloa yrittäjän kotisivulle.
