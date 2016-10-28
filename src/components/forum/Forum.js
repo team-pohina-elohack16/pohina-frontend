@@ -107,14 +107,15 @@ export default class Forum extends React.Component {
         { q: "Suosituksia tilitoimistoista?", a: "toinen vastaus" },
         { q: "Mistä edulliset nettisivut yrityselle?", a: "tee näin" },
         { q: "Tarvitsee alv maksaa kuukausittain?", a: "jia boi" },
-        { q: "Milloin starttirahaa haetaan?", a: "emt" },
+        { q: "Ensimmäisen työntekijän palkkaaminen?", a:
+        "Työvoimatoimisto voi myöntää työnantajalle palkkatukea työttömän henkilön palkkauskustannuksiin, jos työnhakija ei työllisty avoimille työmarkkinoille tai jos hän ei sijoitu koulutukseen." },
       ];
 
       var questionId = 0;
 
 
       const questionsAndAnswers2 = [
-        { q: "Ensimmäisen työntekijän palkkaaminen?", a:
+        { q: "Milloin starttirahaa haetaan?", a:
           `---
           ` },
       ];
@@ -138,7 +139,7 @@ export default class Forum extends React.Component {
                 </button>
                 <h1>Q&A</h1>
                 <p className="lead">Kysymyksiä ja vastauksia yrittäjyydestä</p>
-                <SearchInput className="search-input" onChange={this.searchUpdated} />
+                <SearchInput className="search-input" onChange={this.searchUpdated} placeholder="Hae&hellip;"/>
               </div>
               <div className="col-lg-4 col-md-5 col-sm-6">
                 <div className="sponsor">
