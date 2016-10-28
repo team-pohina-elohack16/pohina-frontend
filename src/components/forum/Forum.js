@@ -97,13 +97,32 @@ export default class Forum extends React.Component {
         { q: "Yrityksen perustamisen vaiheet", a:
           `<li>1. Oma halu ja tahto aloittaa yritystoiminta.</li>
           <li>2. Liiketoimintasuunnitelman laatiminen. Liiketoimintasuunnitelman laatimiseen saa apua mm. Uusyrityskeskuksista ja ELY-keskuksista.</li>
-          <li>3. Yritysmuodon valinta (toiminimi, avoin yhtiö, kommandiittiyhtiö, osakeyhtiö, osuuskunta).</li>
+          <li>3. <a>Yritysmuodon valinta</a> (toiminimi, avoin yhtiö, kommandiittiyhtiö, osakeyhtiö, osuuskunta).</li>
           <li>4. Yritystoiminnan luvanvaraisuuden selvittäminen.</li>
           <li>5. Perustamisilmoitus yritystietojärjestelmään.</li>
           <li>6. Perustamisilmoituksella voidaan ilmoittautua myös kaupparekisteriin, arvonlisäverovelvolliseksi, ennakkoperintärekisteriin ja työnantajarekisteriin.</li>
           <li>7. Kirjanpidon järjestäminen ja tarvittavien vakuutusten ottaminen. </li>
           ` },
-        { q: "Kysymyksiä ja vastauksia yrittäjyydestä", a: "vastaus" },
+        { q: "Yritysmuodon valinta", a:
+
+        `<a>Parturikampaamoissa yleisin yritysmuoto on toiminimi.</a> <br><br> Yksityinen elinkeinonharjoittaja eli toiminimen perustaminen Toiminimen perustamiseen ei tarvita erillistä perustamisasiakirjaa, pelkkä ilmoitus kaupparekisteriin riittää. Yksityinen elinkeinonharjoittaja tekee kaikki sitoumuksensa ja solmii sopimukset omalla nimellään.
+
+<br><b>Avoin yhtiö</b><br>
+
+Avoin yhtiö syntyy, kun kaksi tai useampi yhtiömies sopii elinkeinon harjoittamisesta yhteisen tarkoituksen saavuttamiseksi.
+
+<br><b>Kommandiittiyhtiö</b><br>
+
+Kommandiittiyhtiö perustetaan kirjallisella sopimuksella, jonka allekirjoittavat kaikki osakkaat. Sopimus on lähes samanlainen kuin avoimessa yhtiössä. Lisämääräykset koskevat äänettömän yhtiömiehen panosta ja tälle maksettavaa voitto-osuutta.
+
+<br><b>Osakeyhtiö</b><br>
+
+Osakeyhtiö perustetaan siten, että osakkeenomistajat tekevät kirjallisen perustamissopimuksen ja allekirjoittavat sen. Allekirjoituksella osakkeenomistaja merkitsee perustamissopimuksesta ilmenevän määrän osakkeita.
+
+<br><b>Osuuskunta</b><br>
+
+Osuuskunnan voi perustaa yksi tai useampi luonnollinen henkilö, yhteisö, säätiö tai muu oikeushenkilö. Perustajat liittyvät samalla osuuskunnan jäseneksi.` },
+
         { q: "Suosituksia tilitoimistoista?", a: "toinen vastaus" },
         { q: "Mistä edulliset nettisivut yrityselle?", a: "tee näin" },
         { q: "Tarvitsee alv maksaa kuukausittain?", a: "jia boi" },
