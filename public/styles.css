@@ -1,3 +1,9 @@
+@font-face {
+  font-family: PohinaFont;
+  src: url("fonts/ADAM.CG-PRO.otf");
+  font-weight:400;
+}
+
 .main-container {
   margin-top: 30px;
 }
@@ -44,7 +50,7 @@
 }
 
 .pohina-navbar {
-  margin-left: 12%;
+  margin-left: 110px;
 }
 
 .pohina-navbar-logo {
@@ -181,10 +187,9 @@
 .navbar-inverse .navbar-nav>li>a {
   color: #000000;
   font-size: 15px;
-  margin-top: 15px;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  margin-bottom: 0;
+  margin: 10px 10px 5px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 3px;
 }
 
@@ -423,16 +428,31 @@ body {
 }
 
 .pohina-welcome-container-header {
+  margin-bottom: 75px;
 }
 
 .pohina-welcome-icon {
-  font-size: 25px;
+  font-size: 60px;
   cursor: pointer;
+}
+
+.pohina-welcome-logo {
+  width: 400px;
+}
+
+.pohina-welcome-header {
+  font-family: PohinaFont, Helvetica, Arial, sans-serif;
 }
 
 .pohina-welcome-card {
   height: 500px;
   margin: 120px 0 0 0;
+  text-align: center;
+}
+
+.pohina-welcome-card-nomargin {
+  height: 500px;
+  margin-left: 10px;
   text-align: center;
 }
 

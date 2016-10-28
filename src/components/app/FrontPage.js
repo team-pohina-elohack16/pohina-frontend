@@ -13,8 +13,9 @@ export default class FrontPage extends React.Component {
           </h1>
           <span className="pohina-welcome-icon ion-arrow-down-c"></span>
         </div>
-        <div className="pohina-welcome-card">
-          <h1>Elo entrepreneur hub</h1>
+        <div className="pohina-welcome-card-nomargin">
+          <img className="pohina-welcome-logo" src="img/elo_logo.png" />
+          <h1 className="pohina-welcome-header">Entrepreneur hub</h1>
           <p>
             Paras paikka etsiä ja löytää tietoa yrittäjyydestä.
           </p>
