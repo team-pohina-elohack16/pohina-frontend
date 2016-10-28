@@ -2,6 +2,16 @@
   margin-top: 30px;
 }
 
+.pohina-frontpage-container {
+  height:auto!important;
+  /*min-height: 400px;*/
+  background-image: url("img/frontpage-background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .m-top {
   margin-top: 15px;
 }
@@ -369,15 +379,47 @@ body {
   border-top: 20px solid #f00;
 }
 
-.welcome img {
+.pohina-welcome-container-wrapper {
+  position: absolute;
+  top: 76px;
+  left: 0;
   width: 100%;
 }
 
-.welcome h1 {
+.pohina-welcome-background {
   position: absolute;
-  width: 90%;
-  height: 100%;
-  margin: -42% auto auto 8%;
+  height: 500px;
+  width: 100%;
+}
+
+.pohina-welcome-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 23% 0 0 0;
   color: white;
   font-size: 50px;
+  text-align: center;
+}
+
+.pohina-welcome-container-header {
+}
+
+.pohina-welcome-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.pohina-welcome-card {
+  height: 500px;
+  margin: 120px 0 0 0;
+  text-align: center;
+}
+
+.pohina-welcome-card-inverse {
+  background-color: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+  height: 500px;
+  margin: 120px 0 0 0;
+  text-align: center;
 }
