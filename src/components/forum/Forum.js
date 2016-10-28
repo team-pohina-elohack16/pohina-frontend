@@ -110,9 +110,6 @@ export default class Forum extends React.Component {
         { q: "Milloin starttirahaa haetaan?", a:
           `---
           ` },
-      ];
-
-      const questionsAndAnswers3 = [
         { q: "Suositukset vuokratyöyrityksistä Helsingissä??", a:
           `---
           ` },
@@ -149,20 +146,11 @@ export default class Forum extends React.Component {
 
             <p className="lead">Uusimmat</p>
             {
-              questionsAndAnswers2.map((q) => (
+              questionsAndAnswers2.filter(createFilter(this.state.searchTerm, propertiesToFilter)).map((q) => (
                 <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
               ))
             }
             <br/>
-
-            <p className="lead">Uusimmat</p>
-            {
-              questionsAndAnswers3.map((q) => (
-                <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
-              ))
-            }
-            <br/>
-
           </div>
         </div>
       )
