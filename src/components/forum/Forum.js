@@ -145,7 +145,7 @@ export default class Forum extends React.Component {
             <p className="lead">Uusimmat</p>
             {
               questionsAndAnswers2.map((q) => (
-                <Question question={q.q}  answer={q.a} key={q.q} />
+                <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
               ))
             }
             <br/>
@@ -153,7 +153,7 @@ export default class Forum extends React.Component {
             <p className="lead">Uusimmat</p>
             {
               questionsAndAnswers3.map((q) => (
-                <Question question={q.q}  answer={q.a} key={q.q} />
+                <Question question={q.q}  answer={q.a} key={q.q} questionId={questionId++} />
               ))
             }
             <br/>
