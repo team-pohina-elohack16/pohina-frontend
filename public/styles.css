@@ -415,22 +415,15 @@ body {
   border-top: 20px solid #f00;
 }
 
-.pohina-welcome-container-wrapper {
-  position: absolute;
-  top: 76px;
-  left: 0;
-  width: 100%;
-}
-
 .pohina-welcome-container {
   background-image: url('https://images.unsplash.com/photo-1415045550139-59b6fafc832f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=24b01c30ad6fcf4b33aae390d57ffe2b');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  width: 100%;
   height: 720px;
-  padding: 300px 0 0 0;
-  margin-bottom: 200px;
+  padding: 300px 0 640px 0;
+  margin-bottom: 100px;
+  background-position: center;
   color: white;
   font-size: 50px;
   text-align: center;
@@ -440,11 +433,7 @@ body {
   font-size: 60px;
   cursor: pointer;
   position: relative;
-  top: 100px;
-}
-
-.pohina-welcome-logo {
-  width: 400px;
+  top: 50px;
 }
 
 .pohina-welcome-header {
