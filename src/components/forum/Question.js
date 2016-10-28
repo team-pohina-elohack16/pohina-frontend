@@ -2,19 +2,28 @@ import React from "react";
 import Answer from "./Answer";
 
 export default class Forum extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state ={
+      content: ''
+    }
+  }
+  showContent() {
+    this.setState({content: "Heippa!"});
+  }
   render() {
-    const question = this.props.question.question;
-    const answers = this.props.question.answers;
+    const question = this.props.question;
+    const content = this.state.content;
     return (
       <div className="panel panel-default pohina-forum-panel-outmost">
-        <h3 className="center" >{question}</h3>
-        <ul>
-          {
-            answers.map((item) => (
-              <Answer key={item.answer} answer={item.answer} vote={item.vote} />
-            ))
-          }
-        </ul>
+        <div className="panel-body">
+        <div id="textbox">
+          <p className="pohina-alignleft">{question}</p>
+          <div className="pohina-alignright">
+            <i className="ion-chevron-down"></i>
+          </div>
+        </div>
+        </div>
       </div>
     );
   }

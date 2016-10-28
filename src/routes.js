@@ -10,6 +10,7 @@ import NotFound from "./components/app/NotFound";
 
 import Chart from "./components/chart/Chart";
 import Databank from "components/databank/Databank";
+import MyCompany from "./components/mycompany/MyCompany";
 
 export default (
   <Route>
@@ -18,6 +19,7 @@ export default (
       <Route path="/chart" component={Chart} />
       <Route path="/forum" component={Forum}/>
       <Route path="/databank" component={Databank} />
+      <Route path="/mycompany" component={MyCompany} />
       <Route path="*" component={NotFound}/>
     </Route>
   </Route>
