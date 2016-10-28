@@ -27,6 +27,9 @@ export default class Forum extends React.Component {
               <div id="textbox">
                 <p className="pohina-alignleft">{question}</p>
                 <div className="pohina-alignright">
+                  <p className="pohina-answered-by">
+                    Answered by <a>Elo</a> <i className="verified-checkmark ion-checkmark-circled"></i>
+                  </p>
                   <i className="ion-chevron-down"></i>
                 </div>
               </div>
